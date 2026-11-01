@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8faf8;
+    color: #26382f;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: white;
+}
+
+.navbar h2 {
+    font-size: 25px;
+}
+
+.navbar h2 span {
+    color: #39865c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #26382f;
+    font-size: 14px;
+}
+
+/* Hero */
+.hero {
+    min-height: 500px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.status {
+    color: #39865c;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #39865c;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #39865c;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #718078;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #39865c;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #276642;
+}
+
+.image-placeholder {
+    width: 250px;
+    height: 300px;
+    background: #dcebe0;
+    border-radius: 120px 120px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder span {
+    font-size: 70px;
+    font-weight: bold;
+    color: #39865c;
+}
+
+/* Maintenance */
+.maintenance {
+    text-align: center;
+    background: #eaf3ec;
+    padding: 60px 20px;
+}
+
+.maintenance-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.maintenance h2 {
+    margin-bottom: 15px;
+}
+
+.maintenance p {
+    max-width: 500px;
+    margin: auto;
+    color: #718078;
+    line-height: 1.8;
+}
+
+.maintenance-label {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 18px;
+    background: white;
+    color: #39865c;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* About */
+.about, .skills {
+    padding: 65px 10%;
+}
+
+.about h2, .skills h2 {
+    margin-bottom: 25px;
+    color: #39865c;
+}
+
+.about p {
+    line-height: 1.9;
+    color: #718078;
+    margin-bottom: 10px;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    padding: 12px 20px;
+    background: white;
+    border: 1px solid #dce8df;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #26382f;
+    color: white;
+    padding: 25px;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .navbar {
+        padding: 20px 6%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .image-placeholder {
+        width: 180px;
+        height: 210px;
+    }
+
+    .about, .skills {
+        padding: 45px 7%;
+    }
+}
